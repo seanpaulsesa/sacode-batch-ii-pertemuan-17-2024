@@ -1,4 +1,6 @@
 <?php
+
+
 class Mobil {
 
 // porperti
@@ -29,19 +31,34 @@ class Mobil {
     }
 }
 
+
+class kendaraan extends Mobil {
+    public $jenis;
+    public function bergerak()
+    {
+        echo 'kendaraan sedang bergerak';
+    }
+}
+
 // objek
 $mobil = new Mobil();
+$kendaraan = new kendaraan();
 $mobil->merk = 'Avanza';
 $mobil->model = 'nova';
-$mobil->merk = '2023';
-$mobil->merk = 'putih';
+$mobil->tahun = '2023';
+$mobil->warna = 'putih';
 
 
 // Panggil method
-$ket =' Lorem15'.;
+$ket =' Lorem15.';
 
 // Panggil method
+
 $mobil->cek('samuel',$ket);
-
+$kendaraan->merk = 'BMW';
+$kendaraan->model = 'INOVA';
+$kendaraan->tahun = '2023';
+$kendaraan->warna = 'Putih';
+$kendaraan->cek('sam', '');
 
 ?>
